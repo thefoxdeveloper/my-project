@@ -27,14 +27,14 @@ export default function App() {
   };
 
   return (
-    <div className="">
-      <ul className="flex space-x-72 text-center">
+    <div className="w-screen">
+      <ul className="flex space-x-4 text-center justify-center">
         <li>
           <button
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             onClick={() => openModal(<CreateUser />)}
           >
-            Create User
+            times()
           </button>
         </li>
         <li>
@@ -42,7 +42,7 @@ export default function App() {
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             onClick={() => openModal(<FilteredCollection />)}
           >
-            Filtered Collection
+            where()
           </button>
         </li>
         <li>
@@ -50,7 +50,7 @@ export default function App() {
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             onClick={() => openModal(<FlippedCollection />)}
           >
-            Flipped Collection
+            flip()
           </button>
         </li>
         <li>
@@ -58,7 +58,7 @@ export default function App() {
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             onClick={() => openModal(<UnwrapComponent />)}
           >
-            Unwrap Component
+            unwrap()
           </button>
         </li>
         <li>
@@ -66,7 +66,7 @@ export default function App() {
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             onClick={() => openModal(<RejectComponent />)}
           >
-            Reject Component
+            reject()
           </button>
         </li>
       </ul>
