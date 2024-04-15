@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import CreateUser from "./CreateUser";
 import FilteredCollection from "./FilteredCollection";
 import FlippedCollection from "./FlippedCollection";
@@ -27,37 +27,47 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-slate-600">
-      <ul className="flex space-x-4">
-        <li
-          className="cursor-pointer text-blue-500 hover:text-blue-700"
-          onClick={() => openModal(<CreateUser />)}
-        >
-          Create User
+    <div className="">
+      <ul className="flex space-x-72 text-center">
+        <li>
+          <button
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onClick={() => openModal(<CreateUser />)}
+          >
+            Create User
+          </button>
         </li>
-        <li
-          className="cursor-pointer text-blue-500 hover:text-blue-700"
-          onClick={() => openModal(<FilteredCollection />)}
-        >
-          Filtered Collection
+        <li>
+          <button
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onClick={() => openModal(<FilteredCollection />)}
+          >
+            Filtered Collection
+          </button>
         </li>
-        <li
-          className="cursor-pointer text-blue-500 hover:text-blue-700"
-          onClick={() => openModal(<FlippedCollection />)}
-        >
-          Flipped Collection
+        <li>
+          <button
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onClick={() => openModal(<FlippedCollection />)}
+          >
+            Flipped Collection
+          </button>
         </li>
-        <li
-          className="cursor-pointer text-blue-500 hover:text-blue-700"
-          onClick={() => openModal(<UnwrapComponent />)}
-        >
-          Unwrap Component
+        <li>
+          <button
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onClick={() => openModal(<UnwrapComponent />)}
+          >
+            Unwrap Component
+          </button>
         </li>
-        <li
-          className="cursor-pointer text-blue-500 hover:text-blue-700"
-          onClick={() => openModal(<RejectComponent />)}
-        >
-          Reject Component
+        <li>
+          <button
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onClick={() => openModal(<RejectComponent />)}
+          >
+            Reject Component
+          </button>
         </li>
       </ul>
       {isModalOpen && (
