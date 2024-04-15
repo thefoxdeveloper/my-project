@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import CreateUser from "./CreateUser";
 import FilteredCollection from "./FilteredCollection";
 import FlippedCollection from "./FlippedCollection";
