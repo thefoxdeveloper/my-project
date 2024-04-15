@@ -76,7 +76,7 @@ export default function App() {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
           onClick={handleModalClick}
         >
-          <div className="bg-slate-800 p-6 rounded-lg max-w-md w-full">
+          <div className="bg-slate-800 p-6 rounded-lg max-w-lg w-full">
             <span
               className="absolute top-0 right-0 cursor-pointer text-gray-500 hover:text-gray-700"
               onClick={closeModal}
