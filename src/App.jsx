@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <div className="w-screen">
+    <div className="w-screen h-screen content-center bg-gradient-to-tr from-sky-300 via-sky-400 to-blue-500">
       <ul className="flex  space-x-4 text-center justify-center items-center">
         <li>
           <button
