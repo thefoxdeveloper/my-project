@@ -48,7 +48,7 @@ class FilteredCollection extends React.Component {
         </div>
 
         <div className="relative overflow-x-auto">
-          <h2 className="mb-4">Coleção Filtrada: Menor ou Igual a R$100</h2>
+          <h2 className="mb-4">Coleção Filtrada: Preço igual a R$100</h2>
           <table className="w-full text-sm text-left text-gray-500">
             <thead className="text-xs bg-gray-50 uppercase text-gray-700">
               <tr>
