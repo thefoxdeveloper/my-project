@@ -15,7 +15,7 @@ class FlippedCollection extends React.Component {
 
     return (
       <div className="overflow-x-auto">
-        <p>
+        <p className="mb-4">
           O método flip() inverte as chaves e valores em uma coleção no Laravel,
           facilitando a manipulação de dados.
         </p>

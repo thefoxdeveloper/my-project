@@ -30,9 +30,8 @@ function CreateUser() {
   return (
     <div className="max-w-md mx-auto">
       <p className="mb-4">
-        Você pode usar o método <strong>times()</strong> em combinação com o
-        recurso de criação de registros de modelo do Laravel para gerar usuários
-        fictícios. Aqui está um exemplo de como você poderia fazer isso:
+        O método times do Laravel executa uma ação um número específico de
+        vezes.
       </p>
       <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
         Número de Usuários:

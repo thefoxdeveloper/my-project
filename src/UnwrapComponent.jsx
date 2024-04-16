@@ -36,7 +36,7 @@ class UnwrapComponent extends React.Component {
 
     return (
       <div className="overflow-x-auto">
-        <p>
+        <p className="mb-4">
           O método unwrap() pega uma coleção de dados e retorna os valores
           dentro dela, preservando sua estrutura original.
         </p>

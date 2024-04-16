@@ -10,7 +10,7 @@ class RejectComponent extends React.Component {
 
     return (
       <div className="overflow-x-auto">
-        <p>
+        <p className="mb-4">
           O método reject() filtra a coleção, removendo os itens que atendem a
           uma determinada condição especificada.
         </p>
