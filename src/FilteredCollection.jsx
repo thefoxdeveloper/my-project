@@ -23,8 +23,8 @@ class FilteredCollection extends React.Component {
         </p>
         <div className="relative overflow-x-auto mb-4">
           <h2 className="mb-4">Coleção Original:</h2>
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <table className="w-full text-sm text-left text-gray-500">
+            <thead className="text-xs bg-gray-50 uppercase text-gray-700">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   Nome do Produto
@@ -36,11 +36,8 @@ class FilteredCollection extends React.Component {
             </thead>
             <tbody>
               {collection.map((item, index) => (
-                <tr
-                  key={index}
-                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <tr key={index} className="bg-white border-b">
+                  <td className="px-6 py-4 whitespace-nowrap">
                     {item.produto}
                   </td>
                   <td className="px-6 py-4">R${item.preco}</td>
@@ -52,8 +49,8 @@ class FilteredCollection extends React.Component {
 
         <div className="relative overflow-x-auto">
           <h2 className="mb-4">Coleção Filtrada: Menor ou Igual a R$100</h2>
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <table className="w-full text-sm text-left text-gray-500">
+            <thead className="text-xs bg-gray-50 uppercase text-gray-700">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   Nome do Produto
@@ -65,11 +62,8 @@ class FilteredCollection extends React.Component {
             </thead>
             <tbody>
               {filtrado.map((item, index) => (
-                <tr
-                  key={index}
-                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <tr key={index} className="bg-white border-b">
+                  <td className="px-6 py-4 whitespace-nowrap">
                     {item.produto}
                   </td>
                   <td className="px-6 py-4">R${item.preco}</td>
